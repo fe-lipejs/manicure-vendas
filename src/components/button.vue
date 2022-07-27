@@ -1,6 +1,6 @@
 <template>
     <div id="corpo">
-        <div id="texto"><a href="#">{{texto}}</a></div>
+        <a href="/sobre"><div id="texto">{{texto}}</div></a>
     </div>
 </template>
 <style>
@@ -10,14 +10,19 @@
     justify-content:center;
 
 }
-#texto a{
+#corpo:active{
+    background: linear-gradient(89.68deg, #b12c5f 0.28%, #f228e5 107.78%);
+    
+}
+#corpo a{
     text-decoration: inherit;
     color:inherit
 }
 #texto{
     text-align: center;
     color: black;
-    font-weight:600;
+    font-size: 14px;
+    font-weight:700;
     padding: 1vh;
 }
 
